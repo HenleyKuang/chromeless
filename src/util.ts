@@ -455,8 +455,8 @@ export async function screenshot(
 
   const captureScreenshotOptions = {
     format: 'png',
-    fromSurface: true,
-    clip: undefined,
+    fromSurface: false,
+    clip: { x: 0, y: 0, width: 2000, height: 2000, scale: 1 },
   }
 
   if (selector) {
